@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.jonathanlieblich.myapplication.MainActivity">
+
+    <Button
+        android:id="@+id/by_company"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Employees Working At Macy's"/>
+
+    <Button
+        android:id="@+id/by_city"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/by_company"
+        android:text="Companies in Boston"/>
+
+    <Button
+        android:id="@+id/highest_salary"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/by_city"
+        android:text="Employee with Highest Salary"/>
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/data_recycler_view"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/highest_salary"/>
+
+</RelativeLayout>
